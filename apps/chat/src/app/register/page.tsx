@@ -9,7 +9,6 @@ import { RegisterResponse, ResponseStatus } from "@/app/api/typing.d";
 
 import Locales from "@/locales";
 import styles from "@/app/login/login.module.scss";
-
 export default function Register() {
   const router = useRouter();
   const searchParams = useSearchParams();
