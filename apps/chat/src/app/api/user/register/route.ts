@@ -8,7 +8,6 @@ import {
 } from "database";
 import { sendEmail } from "@/lib/email";
 import { ReturnStatus, ResponseStatus } from "@/app/api/typing.d";
-
 const ifVerifyCode = !!process.env.EMAIL_DOMAIN;
 
 /**
