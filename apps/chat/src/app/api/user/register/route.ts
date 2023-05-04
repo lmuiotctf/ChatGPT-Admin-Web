@@ -9,8 +9,6 @@ import {
 import { sendEmail } from "@/lib/email";
 import { ReturnStatus, ResponseStatus } from "@/app/api/typing.d";
 const ifVerifyCode = !!process.env.EMAIL_DOMAIN;
-
-
 export async function POST(req: NextRequest): Promise<Response> {
   try {
     const { email, password, code, code_type, phone, invitation_code } =
